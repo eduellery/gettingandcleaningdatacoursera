@@ -27,13 +27,22 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-## How to run and what to expect
+## Setup
+
+The following steps are needed in order to execute the project
+
+1. Unzip the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a folder on your local drive.
+2. Put run_analysis.R into `UCI HAR Datase` on that folder where you unziped the file.
+3. In RStudio: setwd("<your_base_folder>\\UCI HAR Dataset\\"), followed by: source("run_analysis.R").
+4. Use data <- read.table("tidy_data_with_averages.txt") to read the data.
+
+## Explanation
 
 The script contained in this repository (run_analysis.R) must be run in the same folder as the downloaded data for this project (listed above).
 
 Once executed, the script will generate 2 files:
 
-1. cleaned_merged_data.txt: contains the data merged and cleaned
+1. cleaned_merged_data.txt: contains the data merged and cleaned.
 2. tidy_data_with_averages.txt: contains the tidy data set with the average of each variable for each activity and each subject
 
-The last one (tidy_data_with_averages.txt) is the expected file to submit for grading
+The last one (tidy_data_with_averages.txt) is the expected file to submit for grading.
